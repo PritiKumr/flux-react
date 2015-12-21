@@ -36,7 +36,7 @@ module.exports = React.createClass({
     },
     
     save: function() {
-        dispatcher.dispatch({ type: constants.create, content: { name: this.state.value, isComplete: false }});
+        dispatcher.dispatch({ type: constants.create, content: { name: this.state.value, isComplete: false, isDeleted: false }});
     },
     
     onChange: function(e) {

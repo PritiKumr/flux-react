@@ -315,19 +315,32 @@ var constants = require("constants").todo,
     dispatcher = require("dispatcher");
 
 module.exports = React.createClass({displayName: 'exports',
+    getInitialState: function() {
+        return {
+            deleted: false,
+        };
+    },
     toggle: function() {
         this.props.todo.isComplete = !this.props.todo.isComplete;
         dispatcher.dispatch({ type: constants.update, content: this.props.todo });
     },
     reset: function() {
+        this.props.todo.isDeleted = true;
+        this.state.deleted = !this.state.deleted;
+        dispatcher.dispatch({type: constants.remove, content: this.props.todo });
 
     },
-    
+    update: function() {
+        dispatcher.dispatch({type: constants.update, content: this.props.todo });
+    },
     render: function() {
+        if ((this.state.deleted) == false){
+            var showButt = React.createElement("button", {type: "button", className: "btn btn-default pull-right spacing-right", onClick: this.reset}, "Delete")
+        }
         return React.createElement("li", {className: "list-group-item pointer", onClick: this.toggle}, 
-        this.props.todo.name, 
-        React.createElement("button", {type: "button", className: "btn btn-default pull-right spacing-right", onClick: this.reset}, "Delete")
-        ); 
+            this.props.todo.name, 
+            React.createElement("button", {type: "button", className: "btn btn-default pull-right spacing-right", onClick: this.reset}, "Delete")
+         ); 
     } 
 });
 });
@@ -371,7 +384,7 @@ module.exports = React.createClass({displayName: 'exports',
     },
     
     save: function() {
-        dispatcher.dispatch({ type: constants.create, content: { name: this.state.value, isComplete: false }});
+        dispatcher.dispatch({ type: constants.create, content: { name: this.state.value, isComplete: false, isDeleted: false }});
     },
     
     onChange: function(e) {
@@ -418,6 +431,7 @@ var _ = require("underscore"),
 module.exports = function(url, constants) {
     this._url = url;
     this._collection = [];
+    this._updatedCollection = [];
     
     $.get(this._url).then(function(data) {
         this._collection = data;
@@ -437,6 +451,10 @@ module.exports = function(url, constants) {
             case constants.create:
                 this._create(payload.content);
                 break;
+
+            case constants.remove:
+                this._remove(payload.content);
+                break;
         }
     }.bind(this));
     
@@ -445,18 +463,28 @@ module.exports = function(url, constants) {
     }.bind(this);
     
     this._update = function(content) {
-        var found = _.find(this._collection, function(x) { return x.id === content.id; });
-        for (var name in found)
-            found[name] = content[name];
+        var itemToEdit = this._collection.indexOf(content);
+
         _notify.call(this);
     };
     
     this._create = function(content) {
+        console.log(content);
         content.id = _.max(this._collection, function(x) { return x.id; }).id + 1;
         this._collection.push(content);
+        console.log("Done creare");
         _notify.call(this);
     }
     
+    this._remove = function(content) {
+        var itemToDelete = this._collection.indexOf(content);
+        console.log(itemToDelete);
+        if (itemToDelete > -1) {
+            this._collection.splice(itemToDelete, 1);
+        }
+        _notify.call(this)
+    }
+
     function _notify() {
         emitter.emit(constants.changed, this._collection);
     }
