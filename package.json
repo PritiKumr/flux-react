@@ -20,6 +20,7 @@
     "react-tags-brunch": "^1.7.1",
     "uglify-js-brunch": "1.7.x",
     "underscore": "^1.6.0",
+    "statik": ">= 1.1.0", 
     "brunch": "^1.7.18",
     "less-brunch": "^1.7.2"
   },
