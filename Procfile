@@ -1,1 +1,1 @@
-web: ./node_modules/brunch/bin/brunch watch --server
+web: node server.js
