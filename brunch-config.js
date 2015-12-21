@@ -32,7 +32,7 @@ module.exports.config = {
         }
     },
     server: {
-        port: 3333,
+        port: 5000,
         run: true
     }
 };
