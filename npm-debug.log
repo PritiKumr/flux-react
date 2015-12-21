@@ -1,0 +1,164 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'statik' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose cache add [ 'statik', null ]
+5 verbose cache add name=undefined spec="statik" args=["statik",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'statik',
+6 verbose parsed url   path: 'statik',
+6 verbose parsed url   href: 'statik' }
+7 silly lockFile 014ce8fa-statik statik
+8 verbose lock statik /home/preethi/.npm/014ce8fa-statik.lock
+9 silly lockFile 014ce8fa-statik statik
+10 silly lockFile 014ce8fa-statik statik
+11 verbose addNamed [ 'statik', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 94fba251-statik statik@
+14 verbose lock statik@ /home/preethi/.npm/94fba251-statik.lock
+15 silly addNameRange { name: 'statik', range: '*', hasData: false }
+16 verbose request where is /statik
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id a5baf87ca7baea1f
+19 verbose url raw /statik
+20 verbose url resolving [ 'https://registry.npmjs.org/', './statik' ]
+21 verbose url resolved https://registry.npmjs.org/statik
+22 verbose request where is https://registry.npmjs.org/statik
+23 info trying registry request attempt 1 at 17:57:34
+24 http GET https://registry.npmjs.org/statik
+25 http 200 https://registry.npmjs.org/statik
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"5RL07935CDKVQ3ESQ1WJUMMLT"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=300',
+26 silly registry.get     'content-length': '56710',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Mon, 21 Dec 2015 12:27:38 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-sin6921-SIN',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1450700857.949033,VS0,VE642',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'statik', range: '*', hasData: true }
+28 silly addNameRange versions [ 'statik',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.1.4',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.3',
+28 silly addNameRange     '1.2.4',
+28 silly addNameRange     '1.2.5',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.3',
+28 silly addNameRange     '1.4.4',
+28 silly addNameRange     '1.4.5',
+28 silly addNameRange     '1.4.6' ] ]
+29 verbose addNamed [ 'statik', '1.4.6' ]
+30 verbose addNamed [ '1.4.6', '1.4.6' ]
+31 silly lockFile e5400d65-statik-1-4-6 statik@1.4.6
+32 verbose lock statik@1.4.6 /home/preethi/.npm/e5400d65-statik-1-4-6.lock
+33 silly lockFile 891d724b-pmjs-org-statik-statik-1-4-6-tgz https://registry.npmjs.org/statik/-/statik-1.4.6.tgz
+34 verbose lock https://registry.npmjs.org/statik/-/statik-1.4.6.tgz /home/preethi/.npm/891d724b-pmjs-org-statik-statik-1-4-6-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/statik/-/statik-1.4.6.tgz',
+35 verbose addRemoteTarball   '8c9c3d1c7c726765f06c93d9d5f8422f1df7bbbb' ]
+36 info retry fetch attempt 1 at 17:57:39
+37 verbose fetch to= /tmp/npm-13674-9ms_25ru/registry.npmjs.org/statik/-/statik-1.4.6.tgz
+38 http GET https://registry.npmjs.org/statik/-/statik-1.4.6.tgz
+39 http 200 https://registry.npmjs.org/statik/-/statik-1.4.6.tgz
+40 silly lockFile 891d724b-pmjs-org-statik-statik-1-4-6-tgz https://registry.npmjs.org/statik/-/statik-1.4.6.tgz
+41 silly lockFile 891d724b-pmjs-org-statik-statik-1-4-6-tgz https://registry.npmjs.org/statik/-/statik-1.4.6.tgz
+42 silly lockFile e5400d65-statik-1-4-6 statik@1.4.6
+43 silly lockFile e5400d65-statik-1-4-6 statik@1.4.6
+44 silly lockFile 94fba251-statik statik@
+45 silly lockFile 94fba251-statik statik@
+46 silly resolved [ { name: 'statik',
+46 silly resolved     version: '1.4.6',
+46 silly resolved     description: 'Simple static file server – serve any directory over HTTP',
+46 silly resolved     homepage: 'https://hongymagic.github.com/statik',
+46 silly resolved     author: { name: 'David Hong', email: 'davidhong.code@gmail.com' },
+46 silly resolved     keywords: [ 'statik', 'static', 'file', 'server', 'cdn', 'developement' ],
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/hongymagic/statik' },
+46 silly resolved     bugs: { url: 'https://github.com/hongymagic/statik/issues' },
+46 silly resolved     dependencies: { extend: '~1.2.1', nopt: '~2.1.2', connect: '~2.11.0' },
+46 silly resolved     devDependencies: {},
+46 silly resolved     main: 'index',
+46 silly resolved     bin: { statik: './bin/statik' },
+46 silly resolved     engines: { node: '0.x.x', npm: '1.x.x' },
+46 silly resolved     scripts: { test: 'grunt test' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     readme: '# Statik\n\nA simple and easy-to-use Node.js module to server static files over HTTP. It\'s\nsuper simple to use it.\n\n## Command line usage\n\n```bash\n$ npm install -g statik\n$ cd ~/Sites\n$ statik\n```\n\nThen head to [http://localhost:3000/](http://localhost:3000/) to see the\ncontents of `./public` served over HTTP.\n\n### Customise the default directory and port\n\n```bash\n// Start server at http://localhost:3000 serving ./public\n$ static --port 3000\n\n// Start server at http://localhost:3000 serving ~/Sites/project\n$ statik --port 3000 ~/Sites/project\n```\n\n### Other command line options\n\n* **maxAge**: browser cache maxAge in milliseconds. Defaults to 0\n* **hidden**: allow transfer of hidden files. Defaults to false\n* **redirect**: redirect to trailing "/" when pathname is directory. Defaults to true\n* **compress**: enable gzip compression. Defaults to true\n* **verbose**: enable logging to stdout. Defaults to false\n\n## Use it programmatically\n\n```bash\n$ npm install statik --save\n```\n\n### Usage\n\n```javascript\n// app.js\nvar statik = require(\'statik\');\nstatik(3000);\n```\n\nYour server will be running on [http://localhost:3000/](http://localhost:3000/)\nserving `./public` directory.\n\n### Customisations\n\nYou can specify the directory you wish to serve as an argument.\n\n```javascript\n// app.js\nvar statik = require(\'statik\');\nstatik({\n\tport: 3000,\n\troot: \'/Users/hongymagic/Sites\'\n});\n```\n\nYour server will be running on [http://localhost:3000/](http://localhost:3000/)\nserver `/Users/hongymagic/sites` directory.\n\nYou can also use command line options when invoking `statik` function.\n\n## Running it on heroku\n\n```bash\n$ echo \'web: node app.js\' > Procfile\n$ heroku create --stack cedar statik-app\n$ git push heroku master\n$ heroku open\n```\n\nBAM!\n\n## FAQ\n\n### Why?\n\n> Because I hate `file://` protocol for the reasons I wish not to disclose. One\nof the recent ones I\'ve come across is [Typekit](http://help.typekit.com/customer/portal/articles/6857-using-typekit-while-developing-locally).\nAnd trust me there are other problems that pop-up if you\'re primarily working\nfor the `http://` protocol.\n\n### What about the HTTP Headers?\n\n> There are some default HTTP Headers that I am going to introduce for the reaons\nwhy I have create this package in the first place:\n\n> 1. Content-Type: statik uses another internal Node.js package `mime` to check\nagainst content types\n> 2. Cache-Control: \'no-cache\'. The primary purpose of statik was so I could easily\nrun a folder as web server over HTTP while I\'m working on a new site. Might as\nwell kill off the cache while I\'m writing and debugging CSS and JavaScript. There\nwill be an option to disable to default behaviour though.\n\n### How does statik treat root `/`?\n\n> For now, it will translate that into `index.html`\n\n## TODO\n\n1. Clean up code around 404 and 500 errors\n2. Options to add/remove default HTTP headers\n3. Default set of files instead of `index.html`\n',
+46 silly resolved     readmeFilename: 'README.md',
+46 silly resolved     _id: 'statik@1.4.6',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '8c9c3d1c7c726765f06c93d9d5f8422f1df7bbbb',
+46 silly resolved        tarball: 'http://registry.npmjs.org/statik/-/statik-1.4.6.tgz' },
+46 silly resolved     _from: 'statik@',
+46 silly resolved     _npmVersion: '1.3.14',
+46 silly resolved     _npmUser: { name: 'hongymagic', email: 'd.hong@me.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '8c9c3d1c7c726765f06c93d9d5f8422f1df7bbbb',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/statik/-/statik-1.4.6.tgz' } ]
+47 info install statik@1.4.6 into /usr/local/lib
+48 info installOne statik@1.4.6
+49 verbose lib/node_modules/statik unbuild
+50 verbose tar unpack /home/preethi/.npm/statik/1.4.6/package.tgz
+51 silly lockFile d83bb710-sr-local-lib-node-modules-statik tar:///usr/local/lib/node_modules/statik
+52 verbose lock tar:///usr/local/lib/node_modules/statik /home/preethi/.npm/d83bb710-sr-local-lib-node-modules-statik.lock
+53 silly lockFile 7f4275f6-thi-npm-statik-1-4-6-package-tgz tar:///home/preethi/.npm/statik/1.4.6/package.tgz
+54 verbose lock tar:///home/preethi/.npm/statik/1.4.6/package.tgz /home/preethi/.npm/7f4275f6-thi-npm-statik-1-4-6-package-tgz.lock
+55 silly gunzTarPerm modes [ '775', '664' ]
+56 error tar.unpack untar error /home/preethi/.npm/statik/1.4.6/package.tgz
+57 silly lockFile d83bb710-sr-local-lib-node-modules-statik tar:///usr/local/lib/node_modules/statik
+58 silly lockFile d83bb710-sr-local-lib-node-modules-statik tar:///usr/local/lib/node_modules/statik
+59 silly lockFile 7f4275f6-thi-npm-statik-1-4-6-package-tgz tar:///home/preethi/.npm/statik/1.4.6/package.tgz
+60 silly lockFile 7f4275f6-thi-npm-statik-1-4-6-package-tgz tar:///home/preethi/.npm/statik/1.4.6/package.tgz
+61 verbose lib/node_modules/statik unbuild
+62 error Error: EACCES, mkdir '/usr/local/lib/node_modules/statik'
+62 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/statik']
+62 error   errno: 3,
+62 error   code: 'EACCES',
+62 error   path: '/usr/local/lib/node_modules/statik',
+62 error   fstream_type: 'Directory',
+62 error   fstream_path: '/usr/local/lib/node_modules/statik',
+62 error   fstream_class: 'DirWriter',
+62 error   fstream_stack:
+62 error    [ '/usr/lib/nodejs/fstream/lib/dir-writer.js:36:23',
+62 error      '/usr/lib/nodejs/mkdirp/index.js:46:53',
+62 error      'Object.oncomplete (fs.js:107:15)' ] }
+63 error Please try running this command again as root/Administrator.
+64 error System Linux 4.2.0-16-generic
+65 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "statik"
+66 error cwd /home/preethi/flux-react
+67 error node -v v0.10.25
+68 error npm -v 1.4.21
+69 error path /usr/local/lib/node_modules/statik
+70 error fstream_path /usr/local/lib/node_modules/statik
+71 error fstream_type Directory
+72 error fstream_class DirWriter
+73 error code EACCES
+74 error errno 3
+75 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/statik'
+76 error fstream_stack /usr/lib/nodejs/fstream/lib/dir-writer.js:36:23
+76 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:46:53
+76 error fstream_stack Object.oncomplete (fs.js:107:15)
+77 verbose exit [ 3, true ]
