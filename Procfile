@@ -1,1 +1,1 @@
-web: statik --port 3333
+web: node app.js
