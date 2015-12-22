@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "brunch build --production",
+    "start": "statik --port 5000"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
